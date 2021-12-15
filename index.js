@@ -1,11 +1,12 @@
-
-
 // déplacement le moon #laLune qui doit passer entre les divs .block 
 
-	var moon = window.document.getElementById('laLune');
+// function holdTheGame() {
+//   if (!holder) holder= window.stopTheGame; 
+//   window.stopTheGame = function(theGame){}
+// };let holder= false,
 
+var moon = window.document.getElementById('laLune');
   var sectionLargeur = window.document.querySelector('section').offsetWidth;
-
   var theGame = {
     directions: {
       haut: false,
@@ -35,7 +36,6 @@
         if (window.document.getElementById('laLune').offsetTop >0){
           this.addPosition('top', -1);
         }}
-
       if (this.directions.bas) {
         if (window.document.getElementById('laLune').offsetTop <545){
         this.addPosition('top', 1);
@@ -51,8 +51,6 @@
           ici.directions.droite = true;
           checkCollisions();
           checkCollisionsAvecLeBut();
-          // temporary testing point removal
-          // removePoint();
         }
         if ('ArrowLeft' === passage.code) {
           ici.directions.gauche = true;
@@ -70,7 +68,6 @@
           checkCollisionsAvecLeBut();
         }
       });
-
 
       window.addEventListener('keyup', function(passage){
         if ('ArrowRight' === passage.code) {
@@ -91,9 +88,7 @@
         if ('ArrowDown' === passage.code) {
           ici.directions.bas = false;
         }
-
       });
-
 
 // Si on ouvre le site sur different ordinateur / taille d'écran cette fonction va être executer pour recalculer les X ou Y
       window.addEventListener('resize', function(){
@@ -104,21 +99,14 @@
 
       window.setInterval(function(){
         ici.animationStarter();
+        
       },1);
     }
   };
-
   theGame.start();
   console.dir(theGame);
   
-  // var holder= false;
-  // function holdTheGame() {
-  //   if (!holder) holder= window.stopTheGame; 
-  //   window.stopTheGame = function(theGame){}
-  // };
-  
-    // Collision detection jquery
-
+    // Collision detection 
   function getAllPositions() {
     let allBlocks = []
     let blocks = document.getElementsByClassName('block');
@@ -185,12 +173,9 @@
         displayFailMessage();
         setTimeout(function (){location.reload();}, 3000);
       } 
-      // return score; ????
   }
-
   
   function checkCollisions() {
-    //let laLunePosition = getlaLunePosition();
     let laLune = document.getElementById('laLune');
     let laLunePosition = laLune.getBoundingClientRect();
     console.log(laLunePosition);
@@ -226,12 +211,9 @@
         console.log("BOOM");
         removePoint();
       } 
-
-
     }}
 
 let hasWon=false;
-
 // La position du But et collision Lalune et LeBUT
 function getLeButPosition() {
   let leBut = document.getElementById('imageBut');
@@ -251,11 +233,11 @@ function getLeButPosition() {
 const won = document.getElementById("imageBravo");
 function displayWonMessage() {
   console.log('teste message gagné');
-  // afficher la div qui contient "perdu"
+  // afficher la div qui contient "gagné"
   document.getElementById("imageBravo").style.display="block"
-  $('.bravo span').click(function() {
-      $('.bravo').css('display','none');
-  });
+  // $('.bravo span').click(function() {
+  //     $('.bravo').css('display','none');
+  // });
 }
 // vérifier la collision et apparaitre le message de WON 
 function checkCollisionsAvecLeBut(butCollision) {
