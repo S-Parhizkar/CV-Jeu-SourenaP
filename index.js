@@ -263,11 +263,9 @@ function checkCollisionsAvecLeBut(butCollision) {
       }
   } 
   
-  
   document.getElementById('closeIntro').onclick = function(){ 
     document.getElementById('messageIntro').style.display = 'none';
      
-      
 //  Timer en bas de page qui montre le temps qu'on est resté sur la page
 let stayTime = 0;
 const timeS = document.getElementById("timer");
@@ -281,8 +279,7 @@ const countUp = setInterval(() => {
     const min = Math.floor(second / 60);
     const sec = Math.floor(second % 60);
     timeS.innerHTML = `
-    ${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}
-    `;
+    ${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}`;
   }
   
 // set timer for timeOut , affichez dans le NAV en haut- message de time out s'affiche en PopUp quand le compteur s'arrête
@@ -319,7 +316,6 @@ function endCount() {
     });
   }
 }
-
 }
   
  
