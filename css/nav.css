@@ -1,0 +1,52 @@
+
+/* Navigation */
+#main-nav {
+    background-color: #1C2574;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 1300px;
+  }
+  
+  #main-nav a {
+    color: #fff;
+    height: 20px;
+  }
+  
+  #main-nav .container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:  0 10px;
+  }
+  
+  #main-nav .logo {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: end;
+  }
+  nav ul li #timeOut{
+  color: #a21441;
+  font-weight: bold;
+  padding-right: 0%;
+}
+  nav ul li #score{
+  color: #a21441;
+  font-weight: bold;
+}
+
+
+  .sourena {
+    font-size: 15px;
+    font-style: italic;
+  }
+  
+  /* Felex: car c'est en ligne  */
+  #main-nav ul {
+    display: flex;
+  }
+  
+  #main-nav ul li a {
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+  }

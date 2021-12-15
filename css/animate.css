@@ -1,0 +1,23 @@
+/* https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp */
+
+/*
+animation: mymove 5s infinite;
+
+@keyframes mymove
+{
+    10% {
+        left: 0;
+    }
+    50% {
+        left: calc(5% - 2px);
+    }
+    100% {
+        left: 0;
+    }
+}
+*/
+
+/* FontFamily : Montserrat */
+
+/* document.getElementsByClassName('timeScore').style.display = 'none';
+} */

@@ -1,0 +1,68 @@
+/* Footer */
+footer {
+  padding:5px 10px;
+  width: 1280px;
+}
+
+#main-footer {
+  background: var(--dark-color);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+footer #timeNow {
+  font-size: 0.8rem;
+}
+#main-footer a {
+  color: #fff;
+  
+}
+#main-footer div {
+display: block;  
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.list li {
+  border-bottom: #555 dotted 1px;
+  padding: .5rem 0;
+ 
+}
+.downLoad li{
+  padding: .5rem 0;
+}
+#voirSite{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer p #timer {
+  color: #00a693;
+  font-weight: bold;
+}
+
+
+#main-footer .footer-container div:last-child p{
+  text-align: justify;
+  line-height: 25px;
+}
+
+#main-footer .footer-container input[type='email'] {
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 90%;
+  
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 95%;
+}

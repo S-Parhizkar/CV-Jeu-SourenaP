@@ -1,0 +1,63 @@
+#laLune{
+  background: url('..//img/planet.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+  height:40px;
+  left:0px;
+  position:absolute;
+  top:0;
+  width:40px;
+  z-index: 1;
+ }
+ .div1{
+   border-bottom: 50%;
+   border: 3px rgb(242, 245, 237) solid;
+ }
+section{
+ background-image: url(../img/cielIran.jpg);
+  padding: 30px 0;
+  position: relative;
+  height:inherit; width: 100%;
+}
+
+#imageBut{
+  border-radius: 50%;
+  height:50px;
+  width:50px;
+ left: 540px;
+ position: absolute;
+ top: 539px;
+}
+
+section div {
+  display: flex;
+}
+.formation{
+  display: flex;
+  justify-content:space-between; 
+}
+.work{
+  justify-content:space-around;
+  padding: 10px;
+}
+.competence{
+  justify-content:space-evenly; 
+}
+.loisir{
+  display: flex;
+  justify-content:space-between; 
+}
+
+
+.block {
+  color:aliceblue;
+  /* transform: translate(-50%, -50%); */
+  background-color: #A21441;
+  background-color: #ee3737;
+  border-radius: 20px;
+  border: solid 1px solid rgb(65, 7, 7);
+  box-shadow: inset 30px 33px 31px #470419 ;
+  font-size: 15px;
+  margin: 25px 0;
+  padding: 30px; 
+  text-align: center;
+}
