@@ -34,6 +34,7 @@ display: block;
 .list li {
   border-bottom: #555 dotted 1px;
   padding: .5rem 0;
+  position: relative;
  
 }
 .downLoad li{
@@ -66,3 +67,11 @@ footer p #timer {
 #main-footer .footer-container input[type='submit'] {
   width: 95%;
 }
+/* .imageLogo{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 70px;
+  top:-10px;
+  margin: 15px 0;
+} */
