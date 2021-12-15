@@ -126,7 +126,7 @@ var moon = window.document.getElementById('laLune');
     return allBlocks;
   }
 
-  
+//  La position de laLune 
   function getlaLunePosition() {
     let laLune = document.getElementById('laLune');
     var laLuneX = laLune.offsetLeft;
@@ -141,7 +141,6 @@ var moon = window.document.getElementById('laLune');
   }
 
   // afficher la div MESSAGE "perdu" le POPUP
-  
   const perdu = document.getElementById("imgMessagePerdu");
   function displayFailMessage() {
     console.log('teste message perdu');
@@ -150,15 +149,13 @@ var moon = window.document.getElementById('laLune');
 
     $('.message1 span').click(function() {
       
-        $('.message1').css('display','none');
-        
+        $('.message1').css('display','none');   
     });
   }
 
-    // Baisser les point VIE de 3 à Zero
+    // Baisser les points VIE 
     let lifeLeft;
     numScore= 3;
-    
     function removePoint() {
     const score = document.getElementById("score");
     let currentScore = parseInt(score.textContent);
@@ -264,8 +261,8 @@ function checkCollisionsAvecLeBut(butCollision) {
 
         hasWon= true;
       }
-
   } 
+  
   
   document.getElementById('closeIntro').onclick = function(){ 
     document.getElementById('messageIntro').style.display = 'none';
