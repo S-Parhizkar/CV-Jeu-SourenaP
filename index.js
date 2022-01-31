@@ -1,4 +1,5 @@
-// déplacement le moon #laLune qui doit passer entre les divs .block 
+// @description : Ce code (uniquement front-end)a été écrit avant mi-décembre / 40 jours après debout de la formation 
+//déplacement le moon #laLune qui doit passer entre les divs .block 
 
 // function holdTheGame() {
 //   if (!holder) holder= window.stopTheGame; 
